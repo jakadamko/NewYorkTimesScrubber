@@ -89,6 +89,7 @@ class Articles extends React.Component {
                     : <div></div>}
                 {this.state.title
                     ? (<div>
+                        {console.log(this.state.articles)}
                         {this.state.articles.map(article => (
                             <ul key={article.url} className="collection with-header">
                                 <br />
@@ -98,6 +99,7 @@ class Articles extends React.Component {
                                     Save
                         </a></li>
                             </ul>
+                        // <div>{console.log(article)}</div>
                         ))}</div>)
                     : <div></div>
                 }
